@@ -40,5 +40,55 @@ public class hm1 {
 }
 */
 
-3.
+//3. Реализовать простой калькулятор
+
+        
+package HomeWork;
+import java.util.Scanner;
+public class hm1 {
+
+public static void main(String[] args) {
+    Scanner iScanner = new Scanner(System.in);
+    while(true){
+      System.out.println("Choose operation");
+      System.out.println("1. Addition");
+      System.out.println("2. Subtraction");
+      System.out.println("3. Multiplication");
+      System.out.println("4. Division");
+      int number = iScanner.nextInt();
+      int result;
+      System.out.println("Input first number: ");
+      int a = iScanner.nextInt();
+      System.out.println("Input second number: ");
+      int b = iScanner.nextInt();
+      System.out.println("a: " + a);
+      System.out.println("b: " + b);
+      
+
+      if (number == 1){
+          result = a + b;
+          System.out.println("Result:" + result);
+      } else if (number == 2){
+          result = a - b;
+          System.out.println("Result:" + result);
+      } else if (number == 3){
+          result = a * b;
+          System.out.println("Result:" + result);
+      } else if (number == 4){
+          if (b == 0){
+          System.out.println("You can't divide by zero");
+        }
+            result = a / b;
+            System.out.println("Result:" + result);
+      } else {
+        System.out.println("Error");
+      }
+      System.out.println("");
+
+    }
+  }
+}
+
+
   
+
